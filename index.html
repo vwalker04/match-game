@@ -16,17 +16,24 @@
 <body>
 
   <script>
+    var imageTracker = "s";
     function switchImg() {
-      var image = document.getElementById("star");
-      image.src="img/star2.jpg";
-  }
+      var image = document.getElementById('box1');
+      if (imageTracker =="s") {
+        image.src = "img/ronin1.jpg";
+        imageTracker = "r";
+      } else {
+        image.src = "img/star1.jpg";
+        imageTracker = "s";
+      }
+    }
   </script>
 
   <h1>Match the Pictures!</h1>
 
   <div class="box-area">
-      <img src="img/star1.jpg" alt="star image" id="star" onclick="switchImg();"/>
-      <img src="img/star2.jpg"/>
+      <a href="#"><img src="img/star1.jpg" alt="star image" id='box1' onclick="switchImg();"/></a>
+      <img src="img/star1.jpg"/>
       <img src="img/star1.jpg"/>
       <img src="img/star1.jpg"/>
       <img src="img/star1.jpg"/>

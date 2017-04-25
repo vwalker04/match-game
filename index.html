@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-<header>
+<head>
+  <meta charset="utf-8">
   <title>Ronin's Match Game</title>
-
+  <script type="text/javascript" scr="js.js"></script>
   <link href="css/styles.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
-</header>
+
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+</head>
 
 <body>
 
-<!-- Potential Nav bar here
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul> -->
+  <script>
+    function switchImg() {
+      var image = document.getElementById("star");
+      image.src="img/star2.jpg";
+  }
+  </script>
 
-<h1>Match the Pictures!</h1>
+  <h1>Match the Pictures!</h1>
 
   <div class="box-area">
-      <img src="img/star1.jpg"/>
-      <img src="img/star1.jpg"/>
+      <img src="img/star1.jpg" alt="star image" id="star" onclick="switchImg();"/>
+      <img src="img/star2.jpg"/>
       <img src="img/star1.jpg"/>
       <img src="img/star1.jpg"/>
       <img src="img/star1.jpg"/>
@@ -36,18 +39,13 @@
       <img src="img/star1.jpg"/>
     </div>
 
-<div class="form">
-  <form action="php/data.php" method="post">
-    <h2 class="feedback-title">We would love your feedback!</h2><br><br>
-    <p>First Name:</p>
-    <input type="text" name="firstname"><br>
-    <p>Last Name:</p>
-    <input type="text" name="lastname"><br><br>
-    <textarea name="text" cols="35" rows="3">Comment Here!</textarea><br>
-    <input type="submit" value="Send, yo!" formtarget="_blank">
-    <input type="reset" value="Start over">
-  </form>
-</div>
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
 </body>
 
 </html>

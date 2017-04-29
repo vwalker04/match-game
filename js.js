@@ -1,3 +1,24 @@
+var images = new Array();
+function preload() {
+  for (i = 0; i < preload.arguments.length; i++) {
+    images[i] = new Array();
+    images[i].src = preload.arguments[i];
+  }
+}
+preload (
+  "img/r1.jpg",
+  "img/r2.jpg",
+  "img/r3.jpg",
+  "img/r4.jpg",
+  "img/r5.jpg",
+  "img/r6.jpg",
+  "img/r7.jpg",
+  "img/r8.jpg",
+  "img/r9.jpg",
+  "img/r10.jpg",
+  "img/r11.jpg",
+  "img/r12.jpg"
+)
 var imageTracker = "s";
 function switchImg() {
   var image = document.getElementById('box1');

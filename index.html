@@ -4,21 +4,47 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ronin's Vacation Pics</title>
+  <title>Star Gallery</title>
   <script type="text/javascript" src="js.js"></script>
   <link href="css/styles.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
 
  <!--Bootstrap conflicts with current layout.-->
  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-
+<div class="hidden">
+  <script>
+    <!--//--><![CDATA[//><!--
+      var images = new Array();
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Array();
+          images[i].src = preload.arguments[i];
+        }
+      }
+      preload (
+        "img/r1.jpg",
+        "img/r2.jpg",
+        "img/r3.jpg",
+        "img/r4.jpg",
+        "img/r5.jpg",
+        "img/r6.jpg",
+        "img/r7.jpg",
+        "img/r8.jpg",
+        "img/r9.jpg",
+        "img/r10.jpg",
+        "img/r11.jpg",
+        "img/r12.jpg"
+      )
+    //--><!]]>
+  </script>
+</div>
 </head>
 
 <body>
 
-  <h1>Click the Pictures!</h1>
+  <h1>Flip the stars!</h1>
 
-  <p>Each photo reveals some fun Ronin had on his journey to and from the philippines!</p>
+  <p>Click each photo to reveal some fun Ronin had on his journey to and from the philippines!</p>
 
   <div class="box-area">
       <img src="img/star1.jpg" alt="star image" id='box1' onclick="switchImg();"/>
@@ -33,7 +59,7 @@
       <img src="img/star1.jpg" alt="star image" id='box10' onclick="switchImg10();"/>
       <img src="img/star1.jpg" alt="star image" id='box11' onclick="switchImg11();"/>
       <img src="img/star1.jpg" alt="star image" id='box12' onclick="switchImg12();"/>
-    </div>
+  </div>
 
 
 <!-- jQuery library -->

@@ -1,5 +1,5 @@
 body {
-  background-color: #400800;
+  background-color: #262525;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
   font-size: 50px;
   text-align: center;
   margin: 100px auto;
-  padding: 30px;
+  padding: 20px;
   max-width: 855px;
   min-width: 400px;
   border-radius: 50%;
@@ -47,6 +47,8 @@ h1 {
 p {
   font-family: 'Slackey', cursive;
   color: #BDBAB1;
+  font-size: 20px;
+  text-align: center;
 }
 
 * {

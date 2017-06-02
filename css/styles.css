@@ -51,6 +51,14 @@ p {
   text-align: center;
 }
 
+#notice {
+  font-family: 'Slackey', cursive;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 * {
 box-sizing: border-box;
 margin: 0;

@@ -4,54 +4,27 @@
 
 <head>
   <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <title>Star Gallery</title>
+
   <script type="text/javascript" src="js/js.js"></script>
   <link href="css/styles.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
 
-  <!--Bootstrap was added after most of the styling was done. It conflicts with current layout. May attempt to
-  incorporate at a later date. -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-<div class="hidden">
-  <script>
-    <!--//--><![CDATA[//><!--
-      var images = new Array();
-      function preload() {
-        for (i = 0; i < preload.arguments.length; i++) {
-          images[i] = new Array();
-          images[i].src = preload.arguments[i];
-        }
-      }
-      preload (
-        "img/r1.jpg",
-        "img/r2.jpg",
-        "img/r3.jpg",
-        "img/r4.jpg",
-        "img/r5.jpg",
-        "img/r6.jpg",
-        "img/r7.jpg",
-        "img/r8.jpg",
-        "img/r9.jpg",
-        "img/r10.jpg",
-        "img/r11.jpg",
-        "img/r12.jpg"
-      )
-    //--><!]]>
-  </script>
-</div>
 </head>
 
 <body>
 
   <h1>Flip the stars!</h1>
 
-  <p>Click each photo to reveal some fun Ronin had on his journey to and from the philippines!</p>
+  <p>Grab each photo to reveal some fun Ronin had on his journey to and from the philippines!</p>
   <br>
   <p id="notice">*** Coming soon: Match Game! ***</p>
 
 
   <div class="box-area">
-      <img src="img/star1.jpg" alt="star image" id='box1' onclick="switchImg();"/>
+      <img src="img/star1.jpg" alt="star image" id='box1'/>
+      <!-- <img src="img/star1.jpg" alt="star image" id='box1' onclick="switchImg();"/> -->
       <img src="img/star1.jpg" alt="star image" id='box2' onclick="switchImg2();"/>
       <img src="img/star1.jpg" alt="star image" id='box3' onclick="switchImg3();"/>
       <img src="img/star1.jpg" alt="star image" id='box4' onclick="switchImg4();"/>
@@ -64,14 +37,6 @@
       <img src="img/star1.jpg" alt="star image" id='box11' onclick="switchImg11();"/>
       <img src="img/star1.jpg" alt="star image" id='box12' onclick="switchImg12();"/>
   </div>
-
-
-<!-- jQuery library -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-
-<!-- Latest compiled JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
 </body>
 
 </html>

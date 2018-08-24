@@ -1,89 +1,64 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <title>Star Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
 
-  <link href="css/styles.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="r1">
+            <img class="front-face" src="img/r1.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r1">
+            <img class="front-face" src="img/r1.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r2">
+            <img class="front-face" src="img/r2.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r2">
+            <img class="front-face" src="img/r2.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r3">
+            <img class="front-face" src="img/r3.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r3">
+            <img class="front-face" src="img/r3.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r5">
+            <img class="front-face" src="img/r5.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r5">
+            <img class="front-face" src="img/r5.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r8">
+            <img class="front-face" src="img/r8.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r8">
+            <img class="front-face" src="img/r8.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r11">
+            <img class="front-face" src="img/r11.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+        <div class="memory-card" data-framework="r11">
+            <img class="front-face" src="img/r11.jpg"/>
+            <img class="back-face" src="img/star1.jpg" />
+        </div>
+    </section>
 
-  <h1>Flip the stars!</h1>
-
-  <p>Grab each photo to reveal some fun Ronin had on his journey to the Philippines!</p>
-  <br>
-  <p id="notice">*** Coming soon: Match Game! ***</p>
-
-
-  <div class="box-area">
-      <img src="img/star1.jpg" alt="star image" id='box1' class="box"/>
-      <!-- <img src="img/star1.jpg" alt="star image" id='box1' onclick="switchImg();"/> -->
-      <img src="img/star1.jpg" alt="star image" id='box2' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box3' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box4' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box5' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box6' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box7' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box8' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box9' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box10' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box11' class="box"/>
-      <img src="img/star1.jpg" alt="star image" id='box12' class="box"/>
-  </div>
-  
-  <script type="text/javascript" src="js/script.js"></script>
-
+    <script src="scripts.js"></script>
 </body>
-
 </html>
-=======
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <title>Star Gallery</title>
-
-  <script type="text/javascript" src="js/js.js"></script>
-  <link href="css/styles.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <h1>Flip the stars!</h1>
-
-  <p>Grab each photo to reveal some fun Ronin had on his journey to the philippines!</p>
-  <br>
-  <p id="notice">*** Coming soon: Match Game! ***</p>
-
-
-  <div class="box-area">
-      <img src="img/star1.jpg" alt="star image" id='box1'/>
-      <!-- <img src="img/star1.jpg" alt="star image" id='box1' onclick="switchImg();"/> -->
-      <img src="img/star1.jpg" alt="star image" id='box2' onclick="switchImg2();"/>
-      <img src="img/star1.jpg" alt="star image" id='box3' onclick="switchImg3();"/>
-      <img src="img/star1.jpg" alt="star image" id='box4' onclick="switchImg4();"/>
-      <img src="img/star1.jpg" alt="star image" id='box5' onclick="switchImg5();"/>
-      <img src="img/star1.jpg" alt="star image" id='box6' onclick="switchImg6();"/>
-      <img src="img/star1.jpg" alt="star image" id='box7' onclick="switchImg7();"/>
-      <img src="img/star1.jpg" alt="star image" id='box8' onclick="switchImg8();"/>
-      <img src="img/star1.jpg" alt="star image" id='box9' onclick="switchImg9();"/>
-      <img src="img/star1.jpg" alt="star image" id='box10' onclick="switchImg10();"/>
-      <img src="img/star1.jpg" alt="star image" id='box11' onclick="switchImg11();"/>
-      <img src="img/star1.jpg" alt="star image" id='box12' onclick="switchImg12();"/>
-  </div>
-</body>
-
-</html>
->>>>>>> 44443daf46563c78172032ab1bdc80c3a4279aaf

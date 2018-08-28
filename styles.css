@@ -7,7 +7,20 @@
 body {
     height: 100vh;
     display: flex;
-    background: lightseagreen;
+    background: #E2ECFF;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100vw;
+}
+
+.intro-content {
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
 }
 
 .memory-game {

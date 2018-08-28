@@ -5,6 +5,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let numOfPairsFlipped = 0;
 let wins = 0;
+let audioClip = document.getElementById("hadouken");
 
 function flipCard() {
     if (lockBoard) return;
@@ -32,6 +33,7 @@ function checkForMatch() {
     }
     if (numOfPairsFlipped === 6) {
         setTimeout( () => {
+            play();
             shuffle();        
             cards.forEach(card => card.addEventListener('click', flipCard));
             numOfPairsFlipped = 0;
@@ -71,6 +73,11 @@ function shuffle() {
         card.style.order = randomPosition;
         card.classList.remove('flip');
     });
+}
+
+function play() {
+    audioClip.volume = 0.1;
+    audioClip.play();
 }
 
 shuffle();

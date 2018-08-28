@@ -14,13 +14,15 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 100vw;
 }
 
 .intro-content {
-    border: 2px solid black;
-    margin: auto;
+    border-bottom: 2px solid black;
+    margin: 30px auto;
     text-align: center;
+    padding-bottom: 20px;
+    width: 75%;
+    line-height: 2;
 }
 
 .memory-game {

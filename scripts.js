@@ -4,6 +4,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 let numOfPairsFlipped = 0;
+let wins = 0;
 
 function flipCard() {
     if (lockBoard) return;
@@ -29,11 +30,14 @@ function checkForMatch() {
     } else {
         unFlipCards();
     }
-    console.log({numOfPairsFlipped})
     if (numOfPairsFlipped === 6) {
         setTimeout( () => {
-            alert("Victory!");
-        }, 500);
+            shuffle();        
+            cards.forEach(card => card.addEventListener('click', flipCard));
+            numOfPairsFlipped = 0;
+            wins++;
+            document.getElementById("wins").innerHTML = wins;
+        }, 1000);
     }
 }
 
@@ -61,11 +65,13 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
+function shuffle() {
     cards.forEach(card => {
         let randomPosition = Math.floor(Math.random() * 12);
         card.style.order = randomPosition;
+        card.classList.remove('flip');
     });
-})(); //Immediately invoked expression. Executed right after it's definition
+}
 
+shuffle();
 cards.forEach(card => card.addEventListener('click', flipCard));
